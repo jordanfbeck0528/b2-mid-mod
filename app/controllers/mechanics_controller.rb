@@ -3,4 +3,8 @@ class MechanicsController < ApplicationController
     @mechanics = Mechanic.all
     # require "pry"; binding.pry
   end
+
+  def show
+    @mechanic = Mechanic.find(params[:id])
+  end
 end
