@@ -1,3 +1,10 @@
 <section id="header_checker">
 <h/1>All Mechanics</h1>
 </section>
+
+<%@mechanics.each do |mechanic|%>
+  <section id="mechanic_details-<%=mechanic.id%>">
+    <%=mechanic.name%><br>
+    <%=mechanic.years_experience%>
+  </section>
+<%end%>
