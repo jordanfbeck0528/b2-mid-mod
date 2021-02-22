@@ -7,7 +7,7 @@ RSpec.describe 'As a user, when I visit the mechanics index page', type: :featur
 
     visit mechanics_path
 
-    within('#header_checker-@mechanic.id') do
+    within('#header_checker') do
       expect(page).to have_content("All Mechanics")
     end
   end
